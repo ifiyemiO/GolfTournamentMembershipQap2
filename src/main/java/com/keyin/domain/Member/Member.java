@@ -15,7 +15,7 @@ public class Member {
     private Long id;
 
 
-    private String MemberName;
+    private String memberName;
 
     private String address;
 
@@ -40,11 +40,11 @@ public class Member {
     }
 
     public String getMemberName() {
-        return MemberName;
+        return memberName;
     }
 
     public void setMemberName(String memberName) {
-        MemberName = memberName;
+        this.memberName = memberName;
     }
 
     public String getAddress() {

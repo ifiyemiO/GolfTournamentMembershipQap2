@@ -46,7 +46,7 @@ public class MemberService {
      * @return A list of members with the matching name.
      */
     public List<Member> searchMembersByName(String name) {
-        return memberRepository.findByName(name);
+        return memberRepository.findMemberByMemberName(name);
     }
 
     /**

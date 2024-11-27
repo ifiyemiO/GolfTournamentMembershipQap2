@@ -1,13 +1,10 @@
 services:
   myapp-main:
-    build:
-      context: .
-    image: golf_club_api
+    image: golf-club-api:latest
     ports:
       - "8080:8080"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/golf_club_dg
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/golf_club_db
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: Keyin2021
-    depends_on:
-      - mysql
+

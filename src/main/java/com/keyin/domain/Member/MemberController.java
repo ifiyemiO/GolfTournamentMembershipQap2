@@ -23,7 +23,7 @@ public class MemberController {
 
     @GetMapping("/search")
     public List<Member> searchMembers(@RequestParam String name) {
-        return memberRepository.findByName(name);
+        return memberRepository.findMemberByMemberName(name);
     }
 }
 
